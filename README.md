@@ -17,6 +17,7 @@ To determine whether certain positions or player profiles are consistently overp
 💡 Hypothesis
 
 We initially hypothesize that:
+
 	•	Skilled positions (like QB and WR) tend to be overpaid relative to their on-field impact.
 	•	Teams that invest more in younger, high-upside players tend to have healthier cap structures.
 	•	There are inefficiencies where veteran players are overpaid based on past performance rather than expected future contribution.
@@ -24,12 +25,14 @@ We initially hypothesize that:
 📊 Key Discoveries
 
 After processing the data, we observe:
+
 	•	Many multi-year contracts backload payments, leading to large cap hits late in the deal.
 	•	Positions like quarterback and edge rusher dominate the top contract values, but does not always align with win percentage or team success.
 	•	Some teams consistently structure contracts with lower guaranteed money and high bonuses—possibly as a hedge against performance drop-offs.
 	•	First-year salary vs. average annual value (AAV) varies widely which we go into further depth
 
 🔍 Features
+
 	•	✅ Web Scraping: Extracts raw contract tables from Spotrac using pandas.read_html
 	•	✅ Regex Parsing: Cleans up messy player data using regex to extract names and contract years
 	•	✅ DataFrame Processing: Converts salaries to numeric values and creates new features for analysis
@@ -37,6 +40,7 @@ After processing the data, we observe:
 	•	✅ Exploratory Analysis Ready: Cleaned data ready for plotting, aggregation, and model training
 
 ⚙️ Technologies Used
+
 	•	Python 3
 	•	Jupyter Notebook
 	•	pandas, numpy
@@ -45,6 +49,7 @@ After processing the data, we observe:
 ⸻
 
 🚀 Future Work
+
 	•	Add team-level aggregation to compare contract strategies
 	•	Integrate performance stats (e.g., PFF grades, win shares)
 	•	Build a predictive model to flag potential overvalued contracts
