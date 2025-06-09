@@ -25,7 +25,7 @@ We initially hypothesize that:
 📊 Key Discoveries
 
 After processing the data, we observe:
-
+/n
 	•	Many multi-year contracts backload payments, leading to large cap hits late in the deal.
 	•	Positions like quarterback and edge rusher dominate the top contract values, but does not always align with win percentage or team success.
 	•	Some teams consistently structure contracts with lower guaranteed money and high bonuses—possibly as a hedge against performance drop-offs.
