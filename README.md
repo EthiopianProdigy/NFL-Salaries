@@ -1,3 +1,52 @@
-# NFL
-	
-The NFL is a multi-billion dollar business. There are millions of fans around the world, possibily even yourself, that invest a significant amount of time and resources to follow and watch their favorite teams and players. The teams are always working to fufill their duty to the fans. With the money they receive, they work on providing fans with the best experience possible, whether that's through giving them a great experience at the game with stadium rennovations or through building a winning team that makes fans want to tune in more. Every year, teams get around 225 million dollars to spend on players, with the money being paid through contracts. It's pretty straightforward, teams spend money on players that they think will benefit the team, and all is good, right? Obviously the answer is no, and there is a lot of nuance and subtleties that go into how much to pay players. Time and time again teams either give way too much money to certain players which ends up hurting the team, and many times teams avoid signing a certain player who ends up being a bargain for another. Then there is the question of how do we weigh which positions are worth more money. Each position has vastly different roles on a team, and therefore some are paid better than others. This however, also depends on the scheme the team has as that can affect how much they value each position. Then there are many more factors such as age and past performance that have to be accounted for. Then after all of that, even if done perfectly to the book can still end up not working. A player could not be a hard worker or lazy or had a fluke year, all of which are very hard to account for. So which are the factors you can account for? This is the question we will answer today, by looking through both basic box score predictions as well as ProFootballFocus' grading system, which breaks down the tape for every play of every player. This brings an element of context to the stats, which also can be deceiving based on what happens in a play, for example a quarterback can throw a perfect pass that gets dropped which would be considered an incompletion. We will do analysis on all different types of stats, advanced and basic, to determine which ones correlate with salary the best or how much each one correlates. This will give us a better picture of how we can predict what teams should pay a player based on their past performance and how much value in general they should add to a team. We will break down each category individually, by passing, rushing, receiving, blocking, run defense, pass rush and coverage, which will give us a nice split of positions and will allow us to differentiate the value of certain skills.
+🏈 NFL Player Contract Analysis
+
+This project analyzes the contract values of NFL players to better understand how teams allocate their salary cap, identify patterns in spending, and surface potential inefficiencies in player compensation. It scrapes data from Spotrac and processes it into a clean and structured format for further exploration.
+
+📊 Project Overview
+
+The NFL operates under a hard salary cap, meaning each team must carefully manage its player contracts. Yet, teams often overpay or underpay players, leading to significant differences in team performance and cap health. This project explores:
+	•	The structure of NFL player contracts
+	•	The timing and duration of contracts
+	•	Trends in player earnings over the years
+	•	Cleaning and transforming real-world web data
+
+🎯 Goal
+
+To determine whether certain positions or player profiles are consistently overpaid or underpaid relative to others—and whether teams with more efficient contract structures tend to perform better.
+
+💡 Hypothesis
+
+We initially hypothesize that:
+	•	Skilled positions (like QB and WR) tend to be overpaid relative to their on-field impact.
+	•	Teams that invest more in younger, high-upside players tend to have healthier cap structures.
+	•	There are inefficiencies where veteran players are overpaid based on past performance rather than expected future contribution.
+
+📊 Key Discoveries
+
+After processing the data, we observe:
+	•	Many multi-year contracts backload payments, leading to large cap hits late in the deal.
+	•	Positions like quarterback and edge rusher dominate the top contract values, but does not always align with win percentage or team success.
+	•	Some teams consistently structure contracts with lower guaranteed money and high bonuses—possibly as a hedge against performance drop-offs.
+	•	First-year salary vs. average annual value (AAV) varies widely which we go into further depth
+
+🔍 Features
+	•	✅ Web Scraping: Extracts raw contract tables from Spotrac using pandas.read_html
+	•	✅ Regex Parsing: Cleans up messy player data using regex to extract names and contract years
+	•	✅ DataFrame Processing: Converts salaries to numeric values and creates new features for analysis
+	•	✅ Error Handling: Skips bad records gracefully without crashing
+	•	✅ Exploratory Analysis Ready: Cleaned data ready for plotting, aggregation, and model training
+
+⚙️ Technologies Used
+	•	Python 3
+	•	Jupyter Notebook
+	•	pandas, numpy
+	•	Regular expressions (re)
+
+⸻
+
+🚀 Future Work
+	•	Add team-level aggregation to compare contract strategies
+	•	Integrate performance stats (e.g., PFF grades, win shares)
+	•	Build a predictive model to flag potential overvalued contracts
+
+ 
