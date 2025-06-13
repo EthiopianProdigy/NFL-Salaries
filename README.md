@@ -5,6 +5,7 @@ This project analyzes the contract values of NFL players to better understand ho
 📊 Project Overview
 
 The NFL operates under a hard salary cap, meaning each team must carefully manage its player contracts. Yet, teams often overpay or underpay players, leading to significant differences in team performance and cap health. This project explores:
+
 	•	The structure of NFL player contracts
 	•	The timing and duration of contracts
 	•	Trends in player earnings over the years
@@ -25,7 +26,7 @@ We initially hypothesize that:
 📊 Key Discoveries
 
 After processing the data, we observe:
-/n
+
 	•	Many multi-year contracts backload payments, leading to large cap hits late in the deal.
 	•	Positions like quarterback and edge rusher dominate the top contract values, but does not always align with win percentage or team success.
 	•	Some teams consistently structure contracts with lower guaranteed money and high bonuses—possibly as a hedge against performance drop-offs.
